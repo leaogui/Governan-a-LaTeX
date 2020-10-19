@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+
+\usepackage{graphicx,url}
+
+%\usepackage[brazil]{babel}   
+\usepackage[utf8]{inputenc}  
+
+     
+\sloppy
+
+\title{Plano de Governança de TI\\ da ZikaCola}
+
+\author{Pedro B. Freitas\inst, Guilherme O. de S. Leão\inst}
+
+
+\address{Análise e Desenvolvimento de Sistemas -- Instituto Federal de São Paulo
+  (IFSP)
+}
+
+
+\begin{document} 
+
+\maketitle
+     
+\begin{Resumo} 
+Este documento é um plano de Governança de TI para a ZikaCola conforme as práticas do COBIT, ITIL, PMBOK e CMMI/MPS.BR com foco na segurança da informação.
+\end{Resumo}
+
+
+\section{Introdução}
+
+A ZikaCola é uma empresa de médio porte do setor alimentício, especificamente refrigerantes. Como prestadores de serviços da ZikaCola, decidimos implantar políticas de segurança na empresa, seguindo as práticas do COBIT, ITIL, PMBOK e CMMI/MPS.BR.
+
+O objetivo deste documento é descrever um plano de implantação de segurança da informação na ZikaCola, tendo como foco aplicar as metodologias mencionadas para evitar vazamento de informações em sistemas de CRMs em nuvem, e-mail e nos computadores físicos da empresa. As informações de contratos, campanhas de marketing, margem de lucros e afins são dados sensíveis cujo o vazamento pode gerar problemas de competitividade contra empresas alimentícias de grande porte nacionais e multinacionais.  
+
+
+\section{Referencial Teórico} 
+
+MAGALHÃES, Ivan Luizio; PINHEIRO, Walfrido Brito. Gerenciamento de
+serviços de TI na prática: uma abordagem com base na ITIL: inclui
+ISO/IEC 20.000 e IT Flex. Novatec Editora, 2007.
+
+SAHIBUDIN, Shamsul; SHARIFI, Mohammad; AYAT, Masarat. Combining
+ITIL, COBIT and ISO/IEC 27002 in order to design a comprehensive IT
+framework in organizations. In: 2008 Second Asia International
+Conference on Modelling and Simulation (AMS). IEEE, 2008. p. 749-753.
+
+ITIL. United Kingdom, 2013. Disponível em: < https://www.axelos.com/bestpracticesolutions/itil/what-is-itil>. What is PRINCE2?. Disponível em: https://www.axelos.com/bestpracticesolutions/prince2/what-is-prince2.
+
+ISACA. COBIT 4.1 Frameworks and Products Brochure. EUA, 2012. Disponível em:
+https://www.isaca.org/Knowledge-Center/cobit/Pages/Overview.aspx. 
+
+\section{Desenvolvimento}
+
+Segue a descrição dos problemas enfrentados atualmente na ZikaCola, os pontos de vulnerabilidade e propostas de melhoria.
+
+\subsection{Descrição}
+
+A ZikaCola tem basicamente dois setores, a parte de fábrica, responsável pela produção do refrigerante, e a administrativa, onde se situa a diretoria e setores de marketing e vendas. A empresa armazena a maior parte dos seus dados em um CRM na nuvem e em repositórios também em nuvem associados aos e-mails da organização. Poucos dados são armazenados localmente nos computadores da empresa, geralmente documentos que estão em desenvolvimento.
+
+Essa empresa teve um problema de vazamento de dados sensíveis que estavam no CRM e em repositórios na nuvem, todos os usuários possuem o mesmo acesso aos dados que foram vazados. A perda desses dados foi seguida de perda de alguns contratos para a concorrência, sugerindo que os mesmos foram vendidos.
+
+Junto com a perda dos contratos, houve um rompimento de confiança na empresa, e os funcionários não estão seguros se tudo está sendo ministrado da melhor maneira.
+
+A ideia é melhorar a segurança para evitar futuras perdas financeiras decorrentes desse tipo de vazamento.
+
+\subsection{Análise do Problema}
+
+Nota-se que grande parte do problema se deve ao fato de que todos usuários possuem o mesmo nível de acesso a todas informações da empresa, em muitos casos, nota-se que certos acessos aos sistema são compartilhados entre vários usuários.
+
+Em uma pesquisa interna na empresa, foi constatado que dados da organização frequentemente são armazenados em contas pessoais de colaboradores e que o acesso aos computadores utilizam sempre a mesma senha e usuário.
+
+Foi observado problemas de segurança fixos, a entrada de pessoas no espaço da empresa não é controlado, sendo perfeitamente possível que uma pessoa entre na empresa acesse um computador e consiga acesso a quase todos os dados da empresa. 
+
+\subsection{Possibilidades}
+
+Temos a possibilidade implantar técnicas na empresa para garantir que o sistema de CRM pare de ser falho e para que os funcionários voltem a ter a confiança no trabalho.
+
+\subsection{Proposta de solução}
+
+A equipe de gerentes propôs aplicar praticar de Gestão de Governança para ajudar a empresa Zika Cola a resolver seus problemas de administração e em relação a o CRM, nisso incluindo COBIT, ITIL, PMBOK e CMMI.
+
+\subsection{implantação de Governança de TI}
+
+Na implementação de Governação de TI poderemos utilizar algumas praticas citadas acima, como por exemplo, um dos conceitos do COBIT é dar a responsabilidade para gerentes e gerenciados, fazendo com que assim, os responsáveis por gerenciar as ferramentas não pequem e deixem pequenas brechas para um possível vazamento. Depois, deveria ser escolhido um framework para ser seguido pela empresa, pois é importante se alinhar com um, de acordo com o próprio COBIT. Também nesse âmbito, a empresa deve considerar separar o gerenciamento da governança. Para tudo ser mais organizado.
+
+Outra interação interessante é utilizar de algumas saídas do PMBOK para gerar alguns artefatos que ajudam a organização e gerenciamento da empresa. Para a Zika Cola, um Plano de Gerenciamento de Riscos e um Plano de Gerenciamento de Comunicações. Gerar esses artefatos garante uma precaução e melhor execução dos trabalhos.
+
+\subsection{Proposta de validação}
+
+Para a validação do projeto, a equipe de gerenciamento deve seguir as práticas aplicadas neste documento. COBIT, ITIL, PMBOK e CMMI estando no mercado a muito tempo, as soluções apresentadas já foram estudas por profissionais muito qualificados, então um começo e possível solução é o seguimento dessas ferramentas.
+
+\subsection{Conclusão}
+
+Com a construção deste trabalho fica claro que a aplicação das práticas de Gestão de Governança podem resolver a maior parte dos problemas da Zika Cola. E que aplicando os métodos apresentados além de fazer uma rotina e um caso mais fácil de ser manipulado, a empresa pode fluir de uma maneira muito melhor.
+
+\end{document}
